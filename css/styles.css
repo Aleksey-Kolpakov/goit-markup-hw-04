@@ -116,7 +116,7 @@ header * {
 	align-items: center;
 }
 .contacts-logo {
-	fill: inherit;
+	fill: var(--main-text-color);
 	width: 16px;
 	height: 12px;
 	margin-right: 10px;
@@ -137,7 +137,8 @@ header * {
 .site-nav .link:focus {
 	color: var(--focus-color);
 }
-.link:hover .contacts-logo {
+.link:hover .contacts-logo,
+.link:focus .contacts-logo {
 	fill: var(--focus-color);
 }
 .link {
@@ -145,6 +146,11 @@ header * {
 	display: block;
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+.header-contacts.link {
+	display: flex;
+	color: var(--main-text-color);
+	align-items: center;
 }
 
 .site-nav .link.active {
