@@ -10,6 +10,7 @@
 	--focus-color: #2196f3;
 	--title-color: #212121;
 	--grey-bkg: #f5f4fa;
+	--grey-logo: #afb1b8;
 }
 
 header {
@@ -321,7 +322,7 @@ header * {
 	background-color: var(--focus-color);
 }
 .social-logo {
-	fill: #afb1b8;
+	fill: var(--grey-logo);
 	width: 20px;
 	height: 20px;
 }
@@ -368,8 +369,8 @@ header * {
 	text-align: center;
 	display: block;
 	height: 90px;
-	color: #afb1b8;
-	border: 1px solid #afb1b8;
+	color: var(--grey-logo);
+	border: 1px solid var(--grey-logo);
 	border-radius: 4px;
 }
 .client-link:hover,
@@ -378,7 +379,6 @@ header * {
 	border: 1px solid var(--focus-color);
 }
 .client-logo {
-	/* position: inherit; */
 	fill: currentColor;
 	height: 100%;
 	width: 100%;
